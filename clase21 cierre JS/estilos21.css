@@ -1,0 +1,13 @@
+#titulo{
+    color: blueviolet;
+    background-color: pink;
+    justify-content: right;
+
+}
+#parrafos{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: chartreuse;
+}
+#materias{
+    color: cadetblue;
+}

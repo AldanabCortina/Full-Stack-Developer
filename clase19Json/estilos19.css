@@ -1,0 +1,30 @@
+.main{
+    background-color:brown;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+article{
+    background-color: paleturquoise;
+    width: 14rem;
+    padding: 2rem;
+    margin: 1rem;
+}
+.nombre{
+    color: whitesmoke;
+    font-size: 1.4rem;
+}
+.imagen{
+    background-color: crimson;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    box-shadow: 0 0 10px cornflowerblue;
+    width: 40%;
+}
+
+.imagen.img{
+    width: 100%;
+    padding: 1rem;
+}
+
