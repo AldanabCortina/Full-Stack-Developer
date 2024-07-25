@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contacto</title>
+    <link rel="stylesheet" href="estilos2.css" />
+  </head>
+  <body>
+    <header class="encabezado">
+      <nav>
+        <ul class="menusuperior">
+          <li><a href="../clase4/index de todo.html">Home</a></li>
+          <li><a href="./pages/personajes.html">Personajes</a></li>
+          <li><a href="contacto.html"> Contacto</a></li>
+          <li><a href="#">Nosotros</a></li>
+        </ul>
+        <div class="link-abajo"><a href="#Bajar a pie de pagina">pie</a></div>
+      </nav>
+    </header>
+
+    <div>
+      <ul>
+        <li></li>
+      </ul>
+    </div>
+    <section class="contacto">
+      <h2>Contacto</h2>
+      <form action="" method="post" class="formulario">
+        <fieldset class="fieldset">
+          <legend class="legend">Informacion del contacto</legend>
+          
+          <!--etiqueta for tiene que coincidir con lo que dice y hace-->
+          <div class="form_group">
+            <label for="nombre">Nombre</label>
+            <input type="text" class="input" name="nombre" id=" nombre" />
+          </div>
+          <!--El input como class para que ocupe el 100%-->
+          <div class="form_group">
+            <label for="apellido" class="label">apellido</label>
+            <input type="text" class="input" name=" apellido" id="apellido" />
+          </div>
+
+          <div class="form_group">
+            <!--Aca estoy pidiendo una contraseña-->
+            <label for="clave">contraseña</label>
+            <input type="password" class="input" name="nombre" id="clave" />
+          </div>
+
+          <div class="form_group">
+            <!--Aca estoy pidiendo tipo numero-->
+            <label for="edad">edad</label>
+            <input type="number" class="input" name="nombre" id="edad" min="18" max="24" />
+          </div>
+
+            <!--Si quiero ingresar un mensaje mas largo
+             minlength="10" maxlength="100" es la cantidad max y minima de caracteres-->
+          
+          <div class="form_group">
+            <label for="mensaje" class="label">Mensaje</label>
+            <textarea
+              name="mensaje"
+              id="mensaje"
+              rows="5"
+              cols="10"
+              minlenth="10"
+              maxlength="100"
+            ></textarea>
+          </div>
+          <!--rows fila y cols columnas que va a tener esa caja-->
+          <div class="form_group">
+            <label for="sitioweb" class="label">Sitio web</label>
+            <input type="url" class="input" name="sitioweb" title="Ingrese url valida"/>
+            <!--Que la contraseña o algo sea de  una derterminada caracteristica-->          
+          </div>
+
+        <div class="form_group">
+          <label for="pais" class="label">Pais</label>
+          <select name="pais" id="">
+            <option value="A">Argentina</option>
+            <option value="B">Belgica</option>
+            <option value="C">Chile</option>
+          </select>
+        </div>
+
+          <div class="form_group">
+            <p for="colores">Selecciona tu color</p>
+            <input type="radio" name="color" value=" rojo" />
+            <label for="rojo">rojo</label>
+            <label for="amarillo">amarillo</label>
+          <div> 
+
+          <div class="form_group">
+            <label for="sauco">sauco</label>
+            <input type="checkbox" />
+            <label for="draco">draco</label>
+            <input type="checkbox" />
+            <label for="hermaionie">Hermaione</label>
+            <input type="checkbox" />
+            <input type="radio" name="color" value=" amarillo" />
+          </div>
+
+          <div class="form_group">
+
+            <!--Casillas de chequeo-->
+            <label for="sauco">sauco</label>
+            <input type="checkbox" />
+
+            <label for="draco">draco</label>
+            <input type="checkbox" />
+
+            <label for="hermaionie">Hermaione</label>
+            <input type="checkbox" />
+
+            <input type="radio" name="color" value=" amarillo" />
+
+          </div>
+
+
+
+          
+        
+
+
+        </fieldset> <!--Esta etiqueta recuadra -->
+      <input type="submit" class="submit-enviar" value="Enviar formulario" />
+        <!--/Value pongo lo que quiero-->
+    </form>
+    </section>
+  </body>
+</html>

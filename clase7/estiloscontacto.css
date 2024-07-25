@@ -1,0 +1,66 @@
+/*Formularios*/
+
+.formulario{
+   width: 80%;
+   margin: 0 auto; 
+}
+
+.fieldset{
+    border: 1px solid palevioletred;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.legend{
+    font-weight:bold ;
+}
+.form_group{
+    margin-bottom: 1.2rem;
+}
+
+.label{
+    display: block;
+}
+input, textarea, select{
+    width:100% ;
+}
+
+.input:focus{
+    background-color: 1px solid green; /*Se pomdria ese renglon en color*/
+}
+.submit-enviar{
+    padding: 1rem;
+    background-color:aqua;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer; /*Aparece una manito* para indicicar que eds boton o input/*/
+}
+
+.submit-enviar:hover{/*Cambia el color cuando se selecciona*/
+    background-color: aquamarine;
+}
+
+.submit-enviar:focus{ /*Cambia el color de la letra al seleccionar*/
+    color: red;
+}
+/*Cuando este activo*/
+.ejemplo li a: :active{/*Este no me anda*/
+    color: blueviolet;
+
+}
+/*Va a cambiar el estilo del enlace*/
+.ejemplo li a:focus{/*Se usa mas para el input*/
+    color: yellow;
+}
+
+/*Cuando ya abri el link se cambia el color*/ 
+.ejemplo li a:visited{ 
+    color: green;
+    font-size: 2rem;
+    background-color: blanchedalmond;
+}
+
+
+
+/*Ejemplo de pseudoclases y y pseudoelementos*/
+

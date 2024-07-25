@@ -1,0 +1,75 @@
+*{ /*Como se aplico el reseto para la parte de grilla*/
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 10px;
+}
+/* GRID EXPLICITO
+.grid-container{
+    display: grid;
+    background-color: antiquewhite;
+    /*grid-template-columns: 20% 30% 50% ; /*Columnas horizontal*/ /*Si quiero dos le pongo dos medidas*/ /*Fr, px,%*/
+    /*grid-template-columns: 100px 150px 200px*/ /*medida px*/
+    /*grid-template-columns: repeat(3, 1fr); /*Crea 3 columnas de igual tamaño*/
+    /*grid-template-rows: repeat(2,150px); /*El largo de cada celda*/
+    /*gap: 2rem; /*Espacio entre celdas*/
+    /*padding: 2rem;}
+
+
+.producto{
+    background-color:cornflowerblue;
+    padding: 2rem;
+    border: 1px solid orangered; /*Borde solido*/
+    /*text-align: center;} /*Para que se centre el texto*/  
+
+/*Grid areas*/
+#grilla{
+    display: grid;
+    grid-template-areas: /*Escribio en el orden que quiero los elementos*/
+    "nav header header" /*Por eso sucede esto*//*AA*/
+    "nav producto publicidad"
+    "nav servicios servicios"  /*"nav servicios publicidad" modifico el largo*/
+    "footer footer footer"; /*Nav pepito pepito*/ /*Segun como modifico es el largo que tendra*/
+
+    /*Puedo utilizar fraccion(fr) pixeles o rem*/
+    grid-template-rows: 100px 1fr 1fr 1fr; /*Si quiero ajustar el tamaño de las cajas que ya hice*/
+    grid-template-columns: 25% auto 15%;
+    row-gap: 1rem; /*Le da el espaciado entre cajas*/
+    column-gap: 20px;/*Espaciado en columnas*/
+    height: 100vh; /*Alto de pantalla*/
+} 
+
+.header{
+    background-color: blueviolet;
+    grid-area: header; /*Le doy un nombre a area*//*AA*/
+}
+
+footer{
+    background-color: red;
+    grid-area: footer; /*Le puedo poner cualquier nombre, Ejemplo pepito*/
+}
+
+#productos{
+    background-color: aquamarine;
+    grid-area: productos;
+}
+
+#servicios{
+    background-color: green;
+    grid-area: servicios;
+}
+
+.navegacion{
+    background-color: rgb(223, 170, 145);
+    grid-area: nav;
+}
+.aside{
+    background-color: royalblue;
+    grid-area: publicidad;
+}
+
+.border{
+    border: 1px solid coral;
+
+}

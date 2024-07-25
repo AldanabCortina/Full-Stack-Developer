@@ -1,0 +1,22 @@
+*.box_model{
+    background-color: bisque;
+    width: 250px;
+    height: auto;
+    overflow: auto;
+    
+    padding-top: 10px;
+    padding-right: 50px;
+    padding-bottom: 80px;
+    padding-left: 20px;
+    
+    /*padding: 10px 40px 30px 20px; /*En una misma linea lo anterior*/
+
+    margin-top: 80px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    
+    margin: 10px 40px; 
+    border: solid 5px rgb(199, 178, 199);
+
+}

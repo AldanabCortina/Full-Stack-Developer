@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 10px;
+}
+/*Mobile first esto es lo que se va a ver por defecto*/
+.body{
+    background-color: pink;
+}
+.tienda{
+    background-color: green;
+    text-align: center;
+    padding: 2rem;
+}
+
+.tienda img{
+    width:60%;
+}
+.comunidad{
+    background-color:blue;
+    padding: 2rem;
+}
+.comunidad img{
+    width: 80%;
+}
+
+.texto{
+    padding: 2rem;
+    /*-webkit-padding-start: 2rem;*/
+    font-size: 1.6rem;
+}
+.footer{
+    height: 15vh;
+    background-color: black;
+    color: white;
+    /*Modificacion para tableta*/
+    text-align: center;
+    font-size: 1.5rem;
+
+}
+/*Se vera a despues de 551*/
+@media(max-width: 551px){
+    .menu-principal{
+        display: none;
+
+    }
+}
+
+/*Esto es solo para celular, ejemplo cuando quiero que se vea
+diferente en escritorio y telefeno*/
+@media (min-width: 552px){
+    .agregado{
+        display: none; /*Oculta el elemento y desaparece de lugar*/
+
+    }
+}
+
+
+/*Tableta*//*Cuando se expande la pag cambia el color*/
+@media(min-width: 760px){
+    
+    .body{
+        background-color: darkorange;
+    }
+    .tienda{
+        background-color: rgb(228, 228, 69);
+        display: flex;/*hago que se comporte de otra forma*/
+        flex-wrap: wrap;
+        padding: 1rem;
+        
+    } 
+
+    .tienda div{
+        width: 30%;
+        background-color: rgb(151, 145, 54);
+    }
+    
+    .tienda img{
+        width: 90%;
+    }
+
+
+    .comunidad{
+        background-color: mediumaquamarine;
+        display: flex; /*Contenido de manera horizontal*/
+
+    }
+}
+/*Aplico conjunciones es decir un minimo y 
+un maximo para quese vea de sierta manera*/
+@media(min-width:768px)and (max-width:1024px){
+    .tienda{
+        text-align: left;
+    }
+
+}
+/*Patalla de Escritorio*/
+@media(min-width:992px){
+    .tienda{
+        /*Aca estamos cambiando la propiedad de corte de tableta, que
+        cuando llegue aca cambie pongo wwap porque ya puse 
+        previamente flex*/
+        flex-wrap: nowrap;
+    }
+}
+
+/*Pantallas grandes*/
+@media(min-width:1200px){
+    .body{
+        background-color: darkolivegreen;
+    }
+}

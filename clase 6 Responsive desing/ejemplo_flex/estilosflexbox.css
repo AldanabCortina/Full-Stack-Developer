@@ -1,0 +1,66 @@
+.contenedor_padre{
+    background-color: aquamarine;
+    display: flex; /*Los pone a todos de manera horizontal*/ /*Contenedor padre*/
+}
+.caja{ /*Que todas las cajas tengan el mismo tamaño*/
+    height: 150px;
+    width: 150px;
+}
+.rojo{
+    background-color: red;
+}
+
+.azul{
+    background-color: blue;
+}
+
+.rosa{
+    background-color: pink;
+}
+
+.naranja{
+    background-color: orangered;
+}
+.amarillo{
+    background-color: yellow;
+    /*height: 200px; /*Para que se mas larga que las otras*/
+}
+
+.verde{
+    background-color: darkgrey;
+}
+
+/*Ejemplo heasder*/
+.header{
+
+    background-color: chartreuse;   
+}
+.logo{
+    background-color: blueviolet; 
+    text-align: center;
+    padding: 1rem;
+}
+
+
+.menu{
+    background-color: brown;
+    width: 60%;
+}
+
+.menu ul{
+    display: flex; /*Prop felxbox*/
+    justify-content: space-around;/*Puedo ver como queda inspeccionando*/
+}
+.login{
+    background-color: darkcyan;
+    width: 40%;
+    /*Uso prop flex de inspeccionar*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navegador{
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,225 @@
+*.box_model{
+    background-color: bisque;
+    width: 250px;
+    height: auto;
+    overflow: auto;
+    
+    padding-top: 10px;
+    padding-right: 50px;
+    padding-bottom: 80px;
+    padding-left: 20px;
+    
+    /*padding: 10px 40px 30px 20px; /*En una misma linea lo anterior*/
+
+    margin-top: 80px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    
+    margin: 10px 40px;  /*Arriba y abajo*/
+    /*over flow auto*/
+    border: solid 5px rgb(199, 178, 199);
+}
+
+/*Formularios*/
+
+/* Formulario */
+
+.formulario {
+    width: 80%;
+    margin: 0 auto;
+}
+  
+.fieldset {
+    border: 1px solid #ccc;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+  
+.legend {
+    font-weight: bold;
+}
+.form_group {
+    margin-bottom: 1.2rem;
+}
+.label{
+    display: block;
+} 
+
+  
+.input, textarea,select {
+    width: 100%;
+
+}
+
+.input:focus {
+    background-color: rgb(193, 216, 193);
+}
+  
+.submit-enviar {
+    padding: 1rem 2rem;
+    background-color: rgb(203, 240, 228);
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.submit-enviar:hover {
+    background-color: rgb(129, 243, 207);
+  
+}
+  
+.submit-enviar:focus {
+    color: rgb(243, 150, 129);
+}
+  
+.ejemplo li a:hover {
+    color: red;
+}
+.ejemplo li a:active {
+    color: rgb(0, 255, 123);
+}
+  
+  
+.ejemplo li a:focus {
+    color: rgb(217, 255, 0);
+}
+  
+.ejemplo li a:visited {
+    color: rgb(255, 0, 200);
+    background-color: antiquewhite;
+}
+  
+  
+/* Ejemplo pseudoclases y pseudoelementos*/
+a:hover {
+    font-weight: bold;
+    background-color: blue;
+    color: white;
+    text-decoration: underline;
+}
+  
+a:link {
+    text-decoration: none;
+    color: red;
+}
+  
+a:visited {
+    color: #999999;
+}
+  
+a:active {
+    background-color: yellow;
+    color: black;
+}
+  
+  
+div:not(.padre) {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+  
+.padre div:nth-child(3) {
+    font-weight: bold;
+    color: orange;
+}
+
+/*Nosotros clase clase 8*/
+
+.gradientes{
+    height: 20vh;
+    /*background-color: violet;*/
+    /*background: radial-gradient(red,yellow, blue);*/
+    background: cornflowerblue;
+    background-image: linear-gradient(to left, red, yellow);
+    
+}
+
+.rojo{
+    background-color:  red;
+  }
+.verde{
+    background-color: green;
+}   
+/*.box_ejemplo{ 
+    width: 150px;
+    height: 150px;
+    background-color: purple;
+    transform: skewY(25deg);
+
+}*/
+
+
+
+.ejemplo div{ 
+    width: 100px;
+    height: 100px;
+    border: solid 2px;
+    /*transition: heigth 2s, width 1s;*/
+    transition: all 2s;
+}
+
+/*EL over sirve para cuando pasas el mouse por encima*/
+.ejemplo div:hover{
+/*height: 200px;
+width: 200px;*/
+padding: 2rem;
+background-color: aqua; /*Cambia cuadno pongo el mousse encima*/
+transform: skewY(24deg);
+
+}
+
+.ejemplo2{ 
+    padding-top:  2rem;
+    padding-bottom: 2rem;
+}
+.input{
+    width: 100px; 
+    height: 100px;
+    transition: all 2s;
+}
+
+.input:focus{
+    width: 200px;
+    font-size: 24px;
+}
+
+.ejemplo3{
+    width: 100px;
+    height: 100px;
+    animation-name: fulanito;
+    background-color: pink;
+    animation-duration:  2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+.titulo{
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+}
+
+ /*Keyframe= linea de tiempo*/
+@keyframes fulanito{
+  0%{ width: 100px; } 
+        25%{ width: 300px; }
+        50%{ width: 200px; background-color: red; }
+        75%{ width: 300px;
+        height: 120px;
+    }
+        100%{ 
+          width: 100px;
+          background-color:rgb(0, 128, 0);
+        }
+  
+    }
+    @keyframes aparecer {
+        0%{
+            opacity: 0;
+        }
+
+        100%{
+            opacity: 1; 
+        }
+    }
+    

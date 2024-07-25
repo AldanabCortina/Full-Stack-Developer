@@ -1,0 +1,70 @@
+#grilla{
+    display: grid;
+    grid-template-areas: /*Escribio en el orden que quiero los elementos*/
+    "nav header header" /*Por eso sucede esto*//*AA*/
+    "nav producto publicidad"
+    "nav servicios servicios"  /*"nav servicios publicidad" modifico el largo*/
+    "nav footer footer"; /*Nav pepito pepito*/ /*Segun como modifico es el largo que tendra*/
+
+    /*Puedo utilizar fraccion(fr) pixeles o rem*/
+    grid-template-rows: 100px 1fr 1fr 1fr; /*Si quiero ajustar el tamaño de las cajas que ya hice*/
+    grid-template-columns: 25% auto 15% 15%;
+    row-gap: 10px; /*Le da el espaciado entre cajas*/
+    column-gap: 20px;/*Espaciado en columnas*/
+    height: 100vh; /*Alto de pantalla*/
+} 
+.border{
+    border: 1px solid coral;
+
+}
+
+.header{
+    background-color: blueviolet;
+    grid-area: header; /*Le doy un nombre a area*//*AA*/
+}
+
+footer{
+    background-color: red;
+    grid-area: footer; /*Le puedo poner cualquier nombre, Ejemplo pepito*/
+}
+
+section#producto{
+    background-color: aquamarine;
+    grid-area: productos;
+}
+
+#servicios{
+    background-color: green;
+        grid-area: servicios;
+}
+
+.navegacion{
+    background-color: rgb(223, 170, 145);
+    grid-area: nav;
+}
+.aside{
+    background-color: royalblue;
+    grid-area: publicidad;
+}
+  
+/*Ejemplo grid con media queries*/
+@media(min-width: 768px){
+    #grilla{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: 20%;
+    }
+    .border{
+        border: 4px solid black;
+        background-color: violet;
+    }
+}
+/*Escritorio*/
+@media(min-width: 1024px){
+    #grilla{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .border{
+        
+        background-color: blue;
+    }
+}

@@ -1,0 +1,18 @@
+/*
+.grid-container{
+    display: grid;
+    background-color: antiquewhite;
+    /*grid-template-columns: 20% 30% 50% ; /*Columnas horizontal*/ /*Si quiero dos le pongo dos medidas*/ /*Fr, px,%*/
+    /*grid-template-columns: 100px 150px 200px*/ /*medida px*/
+    /*grid-template-columns: repeat(3, 1fr); /*Crea 3 columnas de igual tamaño*/
+    /*grid-template-rows: repeat(2,150px); /*El largo de cada celda*/
+    /*gap: 2rem; /*Espacio entre celdas*/
+    /*padding: 2rem;}
+
+
+.producto{
+    background-color:cornflowerblue;
+    padding: 2rem;
+    border: 1px solid orangered; /*Borde solido*/
+    /*text-align: center;} /*Para que se centre el texto*/  
+

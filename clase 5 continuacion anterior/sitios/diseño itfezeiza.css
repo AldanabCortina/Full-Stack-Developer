@@ -1,0 +1,103 @@
+html{
+    font-size: 18px;
+}
+.encabezado{
+    background-image: url('../clase4/asoc\ ezeiza.jpg');
+    background-color: rgb(88, 81, 81);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 1rem;
+    height: 50vh;
+}
+
+.menusuperior{
+    list-style: none; 
+    text-align:center;
+}
+.menusuperior li{
+    display: inline-block;
+}
+
+.menusuperior a{
+    text-decoration: none;
+    color: rgb(66, 187, 19);
+    font: 500px ;
+    font-size: 1.5rem;
+}
+
+/*Contenido*/
+.contenido{
+    background-color:gray; /*Es la caja padre, la que engloba todo*/
+    /*Le doy alguna caracteristicas a esta caja*/
+    padding: 2rem;
+    width: 50%;
+    /*float: left;/*Porque agregue esta propieda en sugerencias*/ /*PROBAR ESTO*/
+}
+
+.contenido__imagen{/*Preguntar por que no me funciona*/
+     color: chocolate; 
+     width: 50%; /*50% de la caja padre*/
+}
+
+/*Que ocupe el 100% la imagen , el 100 de la caja padre */
+.contenido__imagen img{
+    width: 100%; /*Las 3 me quedan del mismo ancho*/
+    box-shadow: 5px 5px rgba(220, 20, 60, 0.603); /*Le da un sombreado a la caja*/
+    border-radius: 10px; /*Para redondear las puntas*/
+
+}
+
+/*Sugerencias*/
+.contenido__sugerencias {   
+    background-color: rgb(253, 190, 255);
+    border: solid 8px black; /*Le pongo un borde*/
+    /*border-top: 12px green;*/ /*Para que le cambie la linea superior del borde*/
+    line-height:  2rem; /*interlineado*/
+    padding:  2rem;
+    width: 30%;
+    float: left;/*Propiedad para que flote*/
+}
+.lista__clases{
+    width: 90%;
+    padding-top: 1rem; /*Para separar un poco el titulo de la imagen*/
+}
+.lista__clases img{
+    width: 100%;
+}
+.contenido__sugerencias{
+    padding-top: 1rem;
+
+}
+.footer{
+    background-color: rgb(26, 94, 71);
+    color: white;
+    clear:both; /*Propiedad para bajar*/
+    padding: 2rem;
+    text-align: center; /*Centramos el nombre pie de pag*/
+}
+
+}
+/*Ejemplo de box model*/
+/**.box_model{
+    background-color: bisque;
+    width: 1200px;
+    height: auto;
+
+    padding-top: 30px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    
+    padding: 10px 40px 30px 20px0; 
+
+    margin-top: 10px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    
+    margin: 10px 40px; 
+    overflow: auto; /*genera la barra de scrol sola*/
+    
+    /*border: solid 5px purple;
+    }*/

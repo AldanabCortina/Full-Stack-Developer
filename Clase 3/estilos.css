@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 18px
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgba(237, 241, 195, 0.712);
+
+
+}
+.encabezado{
+    /*background-image: url(./descarga.jpg);*/
+    background-color: rgb(88, 81, 81);/*Esto es por si la imagen falla*/
+    background-repeat: no-repeat;/*para que no se corte*/
+    background-size: cover;
+    background-position: center;/*para que se centre*/
+    padding: 1rem;
+    height: 20vh;/*el alto de la foto taa*/
+
+}
+.menusuperior{
+    list-style: none; /*sacamos la lista*/
+    text-align:center;/*centre*/
+
+}
+.menusuperior li{ /*voy al menu a la etqieta li que este dentro del menu y los saco de en bloque para pasarlo en linea*/
+    display: inline-block;
+}
+.menusuperior a{
+    text-decoration: none;
+    color: rgb(245, 250, 255);
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+.link-abajo a{
+    color: red;
+    float: right;
+}
